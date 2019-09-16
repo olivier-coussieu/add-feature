@@ -1,0 +1,11 @@
+version: '2'
+services:
+  addfeature-postgresql:
+    image: postgres:11.5
+    # volumes:
+    #     - ~/volumes/jhipster/addFeature/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=addFeature
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
